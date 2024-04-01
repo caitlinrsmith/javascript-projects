@@ -28,7 +28,7 @@ console.log(`There are ${numAstronauts} astronauts.`);
 //c. Use a final loop to monitor the fuel status and the altitude of the shuttle.
 // Each iteration, decrease the fuel level by 100 units for each astronaut aboard. Also, increase the altitude by 50 kilometers.
 
-while (fuelLevel >= 100) {
+while (fuelLevel >= 100 * numAstronauts) {
   fuelLevel = fuelLevel - 100 * numAstronauts;
   altitudeKm = altitudeKm + 50;
 }
@@ -43,7 +43,7 @@ if (altitudeKm >= 2000) {
   console.log("Failed to reach orbit.");
 }
 
-// CODE IS LOOKING GOOD EXCEPT I AM GETTING NEGATIVE GALLONS!! if i input fuel of 26k and astronauts of 6
+// CODE IS LOOKING GOOD EXCEPT I AM GETTING NEGATIVE GALLONS if i input fuel of 26k and astronauts of 6
 
 // while (fuelLevel > 100) {
 //   // altitudeKm + 50;
