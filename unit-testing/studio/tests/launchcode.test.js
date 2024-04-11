@@ -20,7 +20,16 @@ test('should have key called programsOffered that stores an array of "Web Develo
 test(`When passed a number that is ONLY divisible by 2, launchOutput() returns "Launch!"`, function() {
   expect(launchcode.launchOutput(4)).toBe("Launch!");
 });
-  // test(`Should print 'Rutabagas! That doesn't work.' when num is not divisible by 2, 3, or 5`, function() {
+test(`When passed a number that is ONLY divisible by 3, launchOutput() returns "Code!`, function() {
+  expect(launchcode.launchOutput(9)).toBe("Code!");
+});
+test(`When passed a number that is ONLY divisible by 5, return 'Rocks!`, function() {
+  expect(launchcode.launchOutput(25)).toBe("Rocks!");
+});
+// test(``, function() {
+//   expect().toBe();
+// });
+  // test(`Should {print 'Rutabagas! That doesn't work.' when num is not divisible by 2, 3, or 5`, function() {
   //   expect(rutabaga).toBe("Rutabagas! That doesn't work.");
   // });
 
