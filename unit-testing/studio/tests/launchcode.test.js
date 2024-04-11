@@ -18,7 +18,7 @@ test('should have key called programsOffered that stores an array of "Web Develo
   expect(launchcode.programsOffered[2]).toBe('Liftoff');
 });
 test(`When passed a number that is ONLY divisible by 2, launchOutput() returns "Launch!"`, function() {
-  expect(launchOutput.message).toBe("Launch!");
+  expect(launchcode.launchOutput(4)).toBe("Launch!");
 });
   // test(`Should print 'Rutabagas! That doesn't work.' when num is not divisible by 2, 3, or 5`, function() {
   //   expect(rutabaga).toBe("Rutabagas! That doesn't work.");
